@@ -1,0 +1,234 @@
+/*------------------------NAV-BAR----------------------*/
+/*------------------------------------------------------*/
+body{
+    margin: 0;
+    color: white;
+}
+.heading{
+    padding-left: 15%;
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+#topnav{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(6, 18, 61);
+    position: relative;
+}
+#profilepic{
+    position: absolute;
+    right: 3%;
+}
+#bell{
+    position: absolute;
+    right: 8%;
+    top:25%;
+}
+#search{
+    position:absolute;
+    right: 15%;
+    top: 30%;
+}
+
+#search input{
+    position: relative;
+    padding-left:23px;
+    height: 25px;
+    border-radius: 30px;
+    border: 0;
+    
+}
+#search #img1{
+    position: absolute;
+    top: 18%;
+    left: 2%;
+}
+#search #img2{
+    position: absolute;
+    top: 20%;
+    border-radius: 5px;
+    right: 5%;
+}
+#fav{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+}
+#company-logo{
+    position: absolute;
+    left: 2%;
+    top:15%;
+}
+/*--------------------OUTER-DIV------------------------*/
+/*----------------------------------------------------*/
+#outer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width:75%;
+    height: 92vh;
+    overflow: scroll;
+   background-color: rgb(6, 18, 61);
+
+}
+#outer::-webkit-scrollbar {
+    display: none;
+}
+
+/*-----------------------DETAILs-----------------------*/
+/*-----------------------------------------------------*/
+#outer1{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem ;
+    background-color: black;
+}
+#follower{
+    vertical-align: middle;
+    padding-top: 0.8rem;
+    padding-right: 1rem;
+}
+#h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#detail{ 
+    position: relative;
+}
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20rem;
+    width:20rem;
+    margin: 1rem;
+    background-image: radial-gradient(transparent,black);
+}
+#detail img{
+    height: 20rem;
+    width:20rem;
+    margin: 1rem;
+    opacity: 80%;
+}
+#para{
+    margin-top: -1.3rem;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+}
+/*-------------------------OUTER-2---------------------*/
+/*-------------------------------------------------------*/
+#outer2{
+    display: flex;
+    flex-direction: column;
+    width: 84%;   
+    margin-left: 5rem;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 2rem;
+    background-color: rgb(8, 38, 61);
+}
+.items img{
+    height:3rem;
+    width:3rem;
+    margin: 1rem;
+}
+.items div img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.img1{
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+.img2{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+.info{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+/*--------------------ASIDE--------------------------*/
+/*-----------------------------------------------------*/
+aside{
+    position: absolute;
+    width: 25%;
+    height: 38vh;
+    overflow: scroll;
+    background-color: rgb(6, 18, 61);
+    right: 0;
+    top: 16%;
+}
+
+aside::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+/*-------------------------ASIDE-QUEUE---------------------------*/
+/*------------------------------------------------------------*/
+#aside-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    width: 25%;
+    height: 8vh;
+    background-color: rgb(6, 18, 61);
+    left: 75%;
+    top: 8%;  
+}
+#aside-top span img{
+    padding-top: 80%;
+}
+
+#queue{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 2rem;
+}
+#queue ol li{
+    list-style-position: inside;
+}
+.Q-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(6, 18, 61);
+    opacity: 80%;
+    position: relative;
+}
+.Q-items:hover{
+    opacity: 100%;
+    background-image: linear-gradient(to left,rgb(20,20,20),rgb(6, 18, 61));
+}
+.Q-img{
+    margin-right: 4%;
+}
+.Q-img img{
+    height: 60px;
+    width: 60px;
+}
+
+.Q-like{
+    margin-left: 40%;
+}
+.Q-like img{
+    position: absolute;
+    top:25%;
+}

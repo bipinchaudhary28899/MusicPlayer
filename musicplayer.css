@@ -1,0 +1,283 @@
+/*------------------------NAV-BAR----------------------*/
+/*------------------------------------------------------*/
+body{
+    margin: 0;
+    color: white;
+}
+.heading{
+    padding-left: 15%;
+    font-weight: 300;
+}
+.text-center{
+    text-align: center;
+}
+#topnav{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(6, 18, 61);
+    position: relative;
+}
+#profilepic{
+    position: absolute;
+    right: 3%;
+}
+#bell{
+    position: absolute;
+    right: 8%;
+    top:25%;
+}
+#search{
+    position:absolute;
+    right: 15%;
+    top: 30%;
+}
+
+#search input{
+    position: relative;
+    padding-left:23px;
+    height: 25px;
+    border-radius: 30px;
+    border: 0;
+    
+}
+#search #img1{
+    position: absolute;
+    top: 18%;
+    left: 2%;
+}
+#search #img2{
+    position: absolute;
+    top: 20%;
+    border-radius: 5px;
+    right: 5%;
+}
+#fav{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+}
+#company-logo{
+    position: absolute;
+    left: 2%;
+    top:15%;
+}
+
+
+/*--------------------ASIDE--------------------------*/
+/*-----------------------------------------------------*/
+aside{
+    position: absolute;
+    width: 25%;
+    height: 84vh;
+    overflow: scroll;
+    background-color: rgb(6, 18, 61);
+
+    right: 0;
+}
+aside::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*--------------------OUTER-DIV------------------------*/
+/*----------------------------------------------------*/
+#outer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width:75%;
+    height: 92vh;
+    overflow: scroll;
+   background-color: rgb(6, 18, 61);
+
+}
+#outer::-webkit-scrollbar {
+    display: none;
+}
+/*---------------------TRENDING-----------------------*/
+/*----------------------------------------------------*/
+#trending{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 0 14%; 
+    width: 60vw;
+    margin-top: 5%;
+    
+}
+.trending-img img{
+    height: 15rem;
+    width: 15rem;
+    transition: all 0.5s;
+    opacity: 70%;
+}
+.trending-img img:hover{
+    transform:scale(1.1);
+    opacity: 100%;
+}
+
+/*----------------------------LATEST_RELEASE---------------*/
+/*----------------------------------------------------------*/
+#latest-release{
+    margin-left: 11%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(6, 18, 61);
+}
+.LRbox{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin: 3% 10% 3% 3%;
+    transition: all 1.2s;
+    opacity: 80%;
+}
+.LRbox:hover{
+    background-image: linear-gradient(to right,black,transparent);
+    opacity: 100%;
+}
+.LR-i img{
+    height: 70px;
+    width: 70px;
+}
+.LR-h{
+    padding-left: 4px;
+}
+
+.LR-h1{
+    position: relative;
+    margin:2px 2px 2px 30px; 
+}
+.LR-h1 img{
+    position: absolute;
+    right: 0;
+}
+/*-------------------------POLUPAR-ARTIST------------------*/
+/*----------------------------------------------------------*/
+#popular-artist{
+     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   background-color: rgb(1, 8, 33);
+    margin-left: 14%;
+    width: 61vw;
+    transition: all 1.5s;
+}
+
+.PA img{
+    height: 6rem;
+    width: 6rem;
+    margin: 3.5px;
+    border-radius: 50%;
+}
+.PA img:checked{
+    
+}
+/*--------------------------SONG-TYPE------------------------*/
+/*-----------------------------------------------------------*/
+.songtype{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  background-color: rgb(6, 18, 61);
+    margin-left: 14%;
+    margin-top: 8%;
+    width: 61vw;
+}
+
+.ST1{
+    position: relative;
+    overflow: hidden;
+    width: 15rem;
+    height: 10rem;
+}
+.ST1 img{
+    transition: all 0.7s;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+.ST{
+    position: relative;
+}
+.ST1 img:hover{
+    transform: scale(1.4);
+}
+.type{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 30px;
+}
+/*-----------------------BOLLYWOOD-LATEST--------------------*/
+/*-------------------------------------------------------------*/
+.EL img{
+    height: 10rem;
+    width: 10rem;
+}
+/*---------------------------DROP-DOWN-------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*-------------------------ASIDE-QUEUE---------------------------*/
+/*------------------------------------------------------------*/
+#aside-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    width: 25%;
+    height: 8vh;
+    background-color: rgb(6, 18, 61);
+    left: 75%;
+    top: 8%;  
+}
+#aside-top span img{
+    padding-top: 80%;
+}
+
+#queue{
+    display: flex;
+    flex-direction: column;
+    height: 200%;
+    position: fixed;
+}
+#queue ol li{
+    list-style-position: inside;
+}
+.Q-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(6, 18, 61);
+    opacity: 80%;
+    position: relative;
+}
+.Q-items:hover{
+    opacity: 100%;
+    background-image: linear-gradient(to left,rgb(20,20,20),rgb(6, 18, 61));
+}
+.Q-img{
+    margin-right: 4%;
+}
+.Q-img img{
+    height: 60px;
+    width: 60px;
+}
+
+.Q-like{
+    margin-left: 40%;
+}
+.Q-like img{
+    position: absolute;
+    top:25%;
+}
+/*-----------------------CLICK-EVENTS-------------------*/
+/*-------------------------------------------------------*/
